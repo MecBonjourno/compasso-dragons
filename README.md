@@ -28,4 +28,4 @@ Saiba mais sobre builds e deploys [deployment](https://facebook.github.io/create
 
 Meus repositórios [MecBonjourno](github.com/MecBonjourno/).
 
-Projetos e Trabalhos realizados[The Za Co](https://theza.co/).
+Projetos e Trabalhos realizados [The Za Co](https://theza.co/).
