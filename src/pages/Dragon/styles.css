@@ -1,0 +1,139 @@
+.formEdit {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+        
+.allInputs {
+    outline: none;
+    padding: 5px;
+    border-radius:6px;
+    display:block;
+    width: 80%;
+    max-width: 700px;
+    height: 46px;
+    position: relative;
+    margin-top:10px;
+    border: 1px solid #E2E2E2;
+    outline: medium none;
+}
+
+.buttonEdit {
+    text-align: center;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 700px;
+    height: 58px;
+    border-radius: 10px;
+    background-color: #1c89ff;
+    border: solid 1px transparent;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top:12px;
+    transition: all .1s ease-in-out;
+  }
+
+  .buttonDelete {
+    text-align: center;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 700px;
+    height: 58px;
+    border-radius: 10px;
+    background-color: #ff0000;
+    border: solid 1px transparent;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+    margin-top: 20px;
+  }
+  
+  .buttonLogin {
+    text-align: center;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 700px;
+    height: 58px;
+    border-radius: 10px;
+    background-color: #03a318;
+    border: solid 1px transparent;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+    margin-top: 20px;
+  }
+.divButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ .titulo {
+    padding: 2px;
+    font-size: 32px;
+  }
+
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    height: 72px;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
+    background: #ff0000;
+    padding: 4px 6px 0px 6px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 100%;
+    margin-top: 120px;
+    background-color: transparent;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: rgb(128, 126, 126);
+  }
+  h4 {
+    font-size: 20px;
+    color: #00baff;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 25px
+  }
+  p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    color: rgb(128, 126, 126);
+  }
