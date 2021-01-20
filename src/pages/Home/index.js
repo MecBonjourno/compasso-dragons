@@ -45,7 +45,7 @@ const Home= () => {
 
   return (
     <>
-      <header >
+      <header>
        <LoginButton />
           
           <Link to="/createDragon"> <img src={dragonPlusIcon} alt="Icon" style={{maxHeight: 46, maxWidth: 46}} /> </Link> 
