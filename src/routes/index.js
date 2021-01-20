@@ -5,7 +5,7 @@ import Home from '../pages/Home'
 import Dragon from '../pages/Dragon'
 import CreateDragon from '../pages/CreateDragon'
 
-const Routes: React.FC = () => (
+const Routes = () => (
     <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/createdragon" component={CreateDragon} />

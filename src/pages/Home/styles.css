@@ -18,7 +18,7 @@ header{
     top: 0;
     width: 100%;
     opacity: 0.9;
-    background: #ff0000;
+    background: #09ff00;
     padding: 4px 6px 0px 6px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
@@ -40,8 +40,8 @@ header{
   }
 
   body {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -91,6 +91,7 @@ header{
     margin-top: 76px;
     margin-bottom: 12px;
     max-width: 700px;
+    background-color: rgba(141, 141, 141, 0.404);
   }
 
   .Link {

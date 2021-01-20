@@ -8,6 +8,10 @@ import { FiChevronLeft } from 'react-icons/fi'
 import Swal from 'sweetalert2';
 import './styles.css'
 
+const capitalizeFirstLetter = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase()
+}
+
 const CreateDragon = () => {
   const [ newType, setnewType ] = useState('')
   const [ newName, setnewName ] = useState('')
@@ -22,7 +26,7 @@ const CreateDragon = () => {
         }).then((result) => {
           if (result.isConfirmed) {
             Swal.fire('Created!', '', 'success')
-            api.post(`/`, {name: newName.charAt(0).toUpperCase() + newName.slice(1), type: newType.charAt(0).toUpperCase() + newType.slice(1)})
+            api.post(`/`, {name: capitalizeFirstLetter(newName), type: capitalizeFirstLetter(newType)})
           } else if (result.isDenied) {
             Swal.fire('Cancelled', '', 'info')
           }

@@ -50,7 +50,7 @@ const Home= () => {
           
           <Link to="/createDragon"> <img src={dragonPlusIcon} alt="Icon" style={{maxHeight: 46, maxWidth: 46}} /> </Link> 
 
-       <h3>{user.name}</h3>
+        <h3>{user.name}</h3>
        <LogoutButton /> 
       </header>
 
