@@ -4,7 +4,8 @@ import api from '../../services/api'
 import { FiChevronLeft } from 'react-icons/fi'
 import './styles.css'
 import dragonIcon from '../../assets/dragon.png';
-import dragonWhiteIcon from '../../assets/dragonwhite+.png';
+import dragonWhiteIcon from '../../assets/dragonwhite.png';
+// import dragonWhiteIcon from '../../assets/dragonwhite+.png';
 import LoginButton from '../../components/LoginButton';
 import LogoutButton from '../../components/LogouButton';
 import Swal from 'sweetalert2';
@@ -68,14 +69,14 @@ const Dragon = () => {
     { dragon &&  (<>
       <header >
        <LoginButton />
-          <Link to="/">  <FiChevronLeft className="Icon" size={38}/> </Link> 
-          <Link to="/"> <img src={dragonIcon} alt="Icon" style={{maxHeight: 40, maxWidth: 40}} /> </Link> 
+          <Link to="/">  <FiChevronLeft className="Icon" color='white' size={38}/> </Link> 
+          <Link to="/"> <img src={dragonWhiteIcon} alt="Icon" style={{maxHeight: 40, maxWidth: 40}} /> </Link> 
        <LogoutButton /> 
       </header>
 
-      <div class="container">
-        <div class="avatar-flip">
-          <img src={dragonWhiteIcon} alt="Icon" height="150" width="150"/>
+      <div className="container">
+        <div className="avatar-flip">
+          <img src={dragonIcon} alt="Icon" height="150" width="150"/>
         </div>
         <h2>{dragon.name}</h2>
         <h4>{dragon.type}</h4>

@@ -3,7 +3,8 @@ import api from '../../services/api'
 import { Link } from 'react-router-dom'
 import './styles.css'
 import { useAuth0 } from "@auth0/auth0-react";
-import dragonPlusIcon from '../../assets/dragon+.png';
+// import dragonPlusIcon from '../../assets/dragon+.png';
+import dragonWhitePlusIcon from '../../assets/dragonwhite+.png';
 import dragonWhiteIcon from '../../assets/dragonwhite+.png';
 import { FiChevronRight } from 'react-icons/fi'
 import LoginButton from '../../components/LoginButton';
@@ -46,15 +47,11 @@ const Home= () => {
   return (
     <>
       <header>
-       <LoginButton />
-          
-          <Link to="/createDragon"> <img src={dragonPlusIcon} alt="Icon" style={{maxHeight: 46, maxWidth: 46}} /> </Link> 
-
+       <LoginButton />       
+          <Link to="/createDragon"> <img src={dragonWhitePlusIcon} alt="Icon" style={{maxHeight: 46, maxWidth: 46}} /> </Link> 
         <h3>{user.name}</h3>
        <LogoutButton /> 
       </header>
-
-        
 
     <div className="DragonCard">
          {dragons.map(dragon => (

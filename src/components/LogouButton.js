@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
-import logoutIcon from '../assets/logout.png'
+import logoutIcon from '../assets/logoutwhite.png'
 
 const LogoutButton = () => {
   const { logout, isAuthenticated } = useAuth0();

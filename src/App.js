@@ -19,7 +19,7 @@ const App = () => {
        <img src={dragonIcon} alt="Icon" height="150" width="150"/>
         
         <div className="divButtons">
-          <h4>Login to continue:</h4>
+          <h4>Log In to continue:</h4>
          <LoginButton />
         </div>
       </div>
