@@ -1,20 +1,23 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import api from '../../services/api'
 import LoginButton from '../../components/LoginButton';
 import LogoutButton from '../../components/LogouButton';
 import dragonIcon from '../../assets/dragon.png';
 import { FiChevronLeft } from 'react-icons/fi'
 import Swal from 'sweetalert2';
-import './styles.css'
 
 const capitalizeFirstLetter = (string) => {
   return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase()
 }
 
+// let history = useHistory
+
 const CreateDragon = () => {
   const [ newType, setnewType ] = useState('')
   const [ newName, setnewName ] = useState('')
+
+  let history = useHistory();
 
     async function  createDragon(){
         Swal.fire({
@@ -27,10 +30,12 @@ const CreateDragon = () => {
           if (result.isConfirmed) {
             Swal.fire('Created!', '', 'success')
             api.post(`/`, {name: capitalizeFirstLetter(newName), type: capitalizeFirstLetter(newType)})
+            history.push("/")
           } else if (result.isDenied) {
             Swal.fire('Cancelled', '', 'info')
           }
         })
+
       }
 
   return (
