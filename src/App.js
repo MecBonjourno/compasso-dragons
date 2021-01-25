@@ -22,7 +22,6 @@ const App = () => {
 				<div className='container'>
 					<h1>Welcome</h1>
 					<img src={dragonIcon} alt='Icon' height='150' width='150' />
-
 					<div className='divButtons'>
 						<h4>Log In to continue:</h4>
 						<LoginButton />

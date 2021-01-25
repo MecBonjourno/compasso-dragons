@@ -1,19 +1,17 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
-import logoutIcon from '../assets/logoutwhite.png'
+import logoutIcon from '../assets/logoutwhite.png';
 
 const LogoutButton = () => {
-  const { logout, isAuthenticated } = useAuth0();
+	const { logout, isAuthenticated } = useAuth0();
 
-  return (
-    isAuthenticated && (
+	return (
+		isAuthenticated && (
+			<button onClick={() => logout()}>
+				<img src={logoutIcon} alt='Icon' style={{ maxWidth: 30, maxHeight: 30 }} />
+			</button>
+		)
+	);
+};
 
-      <button onClick={() => logout()}>
-        <img src={logoutIcon} alt="Icon" style={{maxWidth: 30,maxHeight: 30}}/>     
-      </button>
-
-    )
-  )
-}
-
-export default LogoutButton
+export default LogoutButton;

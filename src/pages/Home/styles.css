@@ -74,7 +74,7 @@ header{
     text-decoration: none;
     font-size: 48;
     color: #000;
-    max-width: 450px;
+    /* max-width: 450px; */
     line-height: 48px;
     margin-top: 80px;
   }
