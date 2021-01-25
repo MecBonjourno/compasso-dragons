@@ -19,6 +19,7 @@
     "react-json-pretty": "^2.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "react-spinners": "^0.10.4",
     "sweetalert2": "^10.3.5",
     "typescript": "~3.7.2"
   },
