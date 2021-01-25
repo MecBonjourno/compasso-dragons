@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useRouteMatch, Link } from 'react-router-dom';
+import { useRouteMatch, Link, useHistory } from 'react-router-dom';
 import api from '../../services/api';
 import { FiChevronLeft } from 'react-icons/fi';
 import './styles.css';
@@ -20,6 +20,8 @@ const Dragon = () => {
 	const [dragon, setDragon] = useState(null);
 	const [isLoading, setisLoading] = useState(true);
 	const { params } = useRouteMatch();
+
+	let history = useHistory();
 
 	useEffect(() => {
 		api.get(`/${params.id}`).then(response => {
@@ -42,6 +44,7 @@ const Dragon = () => {
 					name: capitalizeFirstLetter(newName),
 					type: capitalizeFirstLetter(newType)
 				});
+				history.push('/');
 			} else if (result.isDenied) {
 				Swal.fire('Cancelled', '', 'info');
 			}
@@ -59,6 +62,7 @@ const Dragon = () => {
 			if (result.isConfirmed) {
 				Swal.fire('Dragon Deleted!', '', 'success');
 				api.delete(`/${params.id}`);
+				history.push('/');
 			} else if (result.isDenied) {
 				Swal.fire('Cancelled', '', 'info');
 			}
