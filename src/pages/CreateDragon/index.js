@@ -11,8 +11,6 @@ const capitalizeFirstLetter = string => {
 	return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 };
 
-// let history = useHistory
-
 const CreateDragon = () => {
 	const [newType, setnewType] = useState('');
 	const [newName, setnewName] = useState('');

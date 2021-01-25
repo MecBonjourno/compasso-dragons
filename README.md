@@ -19,7 +19,7 @@ Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
 
 ### `yarn test` 🔨
 
-## Desabilitada no momento
+### Desabilitada no momento
 
 Inicia a aplicação em modo teste.<br />
 leia mais sobre modo de testes em: [running tests](https://facebook.github.io/create-react-app/docs/running-tests) .

@@ -9,6 +9,7 @@ import Loading from '../../components/Loading';
 import LoginButton from '../../components/LoginButton';
 import LogoutButton from '../../components/LogouButton';
 import Swal from 'sweetalert2';
+import { DateForm } from '../../utils/Date';
 
 const capitalizeFirstLetter = string => {
 	return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
@@ -99,7 +100,7 @@ const Dragon = () => {
 						<h2>{dragon.name}</h2>
 						<h4>{dragon.type}</h4>
 						<p>Dragon ID: {dragon.id}</p>
-						<p>{dragon.createdAt}</p>
+						<p>{DateForm(dragon.createdAt)}</p>
 					</div>
 
 					<form className='formEdit'>
