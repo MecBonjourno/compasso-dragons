@@ -20,6 +20,7 @@ Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
 ### `yarn test` 🔨
 
 Efetua os testes da aplicação.<br />
+(Recomenda-se limpar a API para atingir 100% da funcionalidade, caso contrário podem acontecer disparidades nos testes efetuados.)
 leia mais sobre modo de testes em: [running tests](https://facebook.github.io/create-react-app/docs/running-tests) .
 
 ### `yarn build` 🛠
