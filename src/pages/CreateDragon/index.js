@@ -6,10 +6,7 @@ import LogoutButton from '../../components/LogouButton';
 import dragonIcon from '../../assets/dragonwhite.png';
 import { FiChevronLeft } from 'react-icons/fi';
 import Swal from 'sweetalert2';
-
-const capitalizeFirstLetter = string => {
-	return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
-};
+import { capitalizeFirstLetter } from '../../utils/Capitalize';
 
 const CreateDragon = () => {
 	const [newType, setnewType] = useState('');
@@ -69,7 +66,7 @@ const CreateDragon = () => {
 					></input>
 				</form>
 				<div className='divButtons'>
-					<button className='buttonDelete' onClick={createDragon}>
+					<button className='buttonDelete' data-testid='create' onClick={createDragon}>
 						Create
 					</button>
 				</div>

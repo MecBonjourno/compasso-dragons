@@ -10,10 +10,7 @@ import LoginButton from '../../components/LoginButton';
 import LogoutButton from '../../components/LogouButton';
 import Swal from 'sweetalert2';
 import { DateForm } from '../../utils/Date';
-
-const capitalizeFirstLetter = string => {
-	return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
-};
+import { capitalizeFirstLetter } from '../../utils/Capitalize';
 
 const Dragon = () => {
 	const [newType, setnewType] = useState('');
